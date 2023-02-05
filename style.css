@@ -1,0 +1,110 @@
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(65, 185, 131, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: rgb(255, 255, 255);
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+#container {
+  margin: 5% auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box {
+  display: inline-block;
+  border: 1px solid rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+span {
+  position: absolute;
+  font-size: 75px;
+  text-align: center;
+  height: 75px;
+  width: 75px;
+  padding: 0;
+  margin: 5px;
+  margin-left: -35px;
+}
+
+.top {
+  border-top: none;
+}
+
+.bottom {
+  border-bottom: none;
+}
+
+.left {
+  border-left: none;
+}
+
+.right {
+  border-right: none;
+}
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button {
+  background-color: rgba(65, 185, 131, 1);
+  cursor: pointer;
+  border-radius: 5px;
+  color: ghostwhite;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+}
+
+button div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 45px;
+  width: 100px;
+  font-size: 25px;
+  font-family: "Dosis", sans-serif;
+}
+
+button:hover {
+  background: silver;
+}
+
+.activeBox {
+  background: linear-gradient(320deg, #f12711, #f5af19);
+}
+
+@keyframes larger {
+  from {
+    height: 75px;
+    width: 125px;
+  }
+  to {
+    height: 100px;
+    width: 250px;
+  }
+}
